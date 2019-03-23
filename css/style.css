@@ -2578,7 +2578,7 @@ h6 {
         background: #fff;
         color: #222222; }
 .tabs_inner .tab-content .tab-pane .list {
-  max-width: 400px;
+  max-width: 700px;
   margin: auto;
   position: relative;
   padding-top: 40px;
@@ -2625,8 +2625,7 @@ h6 {
         padding-top: 20px; }
     .tabs_inner .tab-content .tab-pane .list li .media .media-body h5 {
       color: #fff;
-      font-size: 15px;
-	  margin-left: 50px
+      font-size: 19px;
       text-transform: uppercase;
       margin-bottom: 20px; }
     .tabs_inner .tab-content .tab-pane .list li .media .media-body p {
