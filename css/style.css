@@ -2623,9 +2623,9 @@ h6 {
         color: rgba(255, 255, 255, 0.75);
         margin-bottom: 0px;
         padding-top: 20px; }
-    .tabs_inner .tab-content .tab-pane .list li .media .media-body h5 {
+    .tabs_inner .tab-content .tab-pane .list li .media .media-body h4 {
       color: #fff;
-      font-size: 22px;
+      font-size: 24px;
       text-transform: uppercase;
       margin-bottom: 20px; }
     .tabs_inner .tab-content .tab-pane .list li .media .media-body p {
