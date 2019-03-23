@@ -2542,9 +2542,9 @@ h6 {
         border-radius: 5px;
         vertical-align: middle;
         align-self: center;
-        background-image: -moz-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-        background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-        background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%); }
+        background-image: -moz-linear-gradient(0deg, #000000 0%, #efef23 100%);
+        background-image: -webkit-linear-gradient(0deg, #000000 0%, #efef23 100%);
+        background-image: -ms-linear-gradient(0deg, #000000 0%, #efef23 100%); }
 
 /* End Welcome Area css
 ============================================================================================ */
