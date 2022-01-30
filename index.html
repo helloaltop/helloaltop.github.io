@@ -1,70 +1,25 @@
+<!DOCTYPE html>
 
 <html>
 <head>
- <meta name="description" content="Web Share API demo">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Homer Simpson</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 </head>
-<title>
-    Web Share API
-</title>
 
 <body>
-    <div>
-        <div>
-            <input type="text" placeholder="Enter text you wanna share" id="title" />
-        </div>
-        <div>
-            <input type="text" placeholder="Enter the text you want to share here" id="text" />
-        </div>
-        <div>
-            <input type="text" placeholder="Enter the URL" id="url" />
-        </div>
-        <div>
-            <input type="file" id="file" />
-        </div>
-        <div>
-            <button onclick="share" id="shareButton">Share</button>
-            <button onclick="shareFiles" id="https://api.whatsapp.com/send?text=textToshare">Share Files</button>
-        </div>
+    <img id="userPhoto" src="https://i.imgur.com/t8ZX9um.jpg" alt="User Photo">
+    
+    <a href="https://www.instagram.com/thesimpsons" id="userName">@thesimpsons</a>
+    <div id="links">
+        <a class="link" href="https://pt.wikipedia.org/wiki/Homer_Simpson" target="_blank">Wikipedia</a>
+        <a class="link" href="https://foxplay.com/br/forme" target="_blank">IMDB</a>
     </div>
+
+    <!-- Javascript -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script  src="index.js"></script>
 </body>
-<script>
-    shareButton.addEventListener("click", () => share())
-    shareFilesButton.addEventListener("click", () => shareFiles())
-
-    function share() {
-        console.log("23")
-        if (navigator.share) {
-            navigator.share({
-                    title: title.value,
-                    text: text.value,
-                    url: url.value,
-                })
-                .then(() => console.log('Successful share'))
-                .catch((error) => console.log('Error sharing', error));
-        } else {
-            console.log("Web Share API is not available in your browser.")
-        }
-    }
-
-    function shareFiles() {
-        
-        console.log(file.value)
-        const files = [file]
-        if (navigator.canShare && navigator.canShare({
-                files: files
-            })) {
-            navigator.share({
-                    title: title.value,
-                    text: text.value,
-                    file: files,
-                })
-                .then(() => console.log('Successful share'))
-                .catch((error) => console.log('Error sharing', error));
-        } else {
-            console.log("Web Share API is not available in your browser.")
-        }
-    }
-</script>
-
 </html>
